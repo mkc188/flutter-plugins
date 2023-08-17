@@ -81,6 +81,7 @@ class LocationManager {
         disposeCallback: LocationCallbackHandler.disposeCallback,
         autoStop: false,
         androidSettings: AndroidSettings(
+            client: LocationClient.android,
             accuracy: _accuracy,
             interval: _interval,
             distanceFilter: _distanceFilter,
